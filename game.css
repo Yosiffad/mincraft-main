@@ -1,0 +1,214 @@
+.side-bar {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  height: 100vh;
+  width: 20vw;
+  background-color: rgb(104, 97, 97);
+}
+
+.side-bar button {
+  width: 7rem;
+  height: 7rem;
+  margin-left: 10rem;
+}
+
+.btn-tool_size {
+  width: 5rem;
+  height: 5rem;
+}
+
+.btn-start_size {
+  width: 13rem;
+  height: 9rem;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(170, 127, 9);
+  background-color: rgb(14, 13, 13);
+  border-radius: 50px;
+  
+}
+.btn-start_size:hover{
+  
+  background-color: brown;
+}
+
+
+.pickaxe-btn_img {
+  background: url(/images/Enchanted_Diamond_Pickaxe.gif) no-repeat center
+    center/cover;
+}
+
+.shovel-btn_img {
+  background: url(/images/Enchanted_Diamond_Shovel.gif) no-repeat center
+    center/cover;
+}
+
+.axi-btn_img {
+  background: url(/images/Enchanted_Netherite_Axe.gif) no-repeat center
+    center/cover;
+}
+
+.landing-page {
+  position: absolute;
+  width: 80vw;
+  height: 100vh;
+  background: url(/images/4003568.webp) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.game-board {
+  background-color: rgb(77, 156, 192);
+  width: 60vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(20, 1fr);
+}
+
+
+.dark-packs {
+  background: url(/images/dark-grass-side2-copy.jpg) no-repeat center
+    center/cover;
+}
+.green {
+  background: url(/images/tree.jfif) no-repeat center center/cover;
+}
+
+.dark-green {
+  background: url(/images/dark-green-grass-top-copy.jpg) no-repeat center
+    center/cover;
+}
+
+.brown {
+  background: url(/images/dirt.jpg) no-repeat center center/cover;
+}
+
+.dark-mode-brwon {
+  background: url(/images/dark-brown.png) no-repeat center center/cover;
+}
+
+.darkbrown {
+  background: url(/images/minecraft_tree.jpg) no-repeat center center/cover;
+}
+
+.dark-oak {
+  background: url(/images/dark-oak.jpg) no-repeat center center/cover;
+}
+
+.gray {
+  background: url(/images/minecraft_stone_brick_simple_texture_wallpaper_by_elbarnzo_d82j2kd-fullview.jpg)
+    no-repeat center center/cover;
+}
+
+.white {
+  background-color: rgb(250, 243, 243);
+}
+
+.packs {
+  background: url(/images/floor.jpg) no-repeat center center/cover;
+}
+
+.stones {
+  background: url(/images/stones.png) no-repeat center center/cover;
+}
+
+.active-btn {
+  border: 0.4rem solid rgb(34, 124, 228);
+}
+
+.unactive-btn {
+  border: 0.4rem solid rgb(233, 20, 37);
+}
+
+.reset-btn {
+  width: 7rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  background-color: cornflowerblue;
+}
+
+.game-extra {
+  width: 15vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.game-extra button {
+  width: 5rem;
+  height: 5rem;
+  font-size: 1.2rem;
+  margin: 1rem;
+  background-color: rgb(104, 163, 143);
+  font-weight: bold;
+}
+
+.game-board div:hover {
+  border: 0.1rem solid rgb(192, 190, 190);
+}
+
+#inventory {
+  width: 4rem;
+  height: 4rem;
+}
+
+@media (max-width: 600px) {
+  .landing-page {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .game-container {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .side-bar {
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: none;
+    align-items: center;
+    background-color: rgb(214, 207, 207);
+    align-items: center;
+  }
+
+  .side-bar button {
+    padding: 0;
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .btn-tool_size {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .game-board {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .pickaxe-btn_img,
+  .shovel-btn_img,
+  .axi-btn_img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .game-extra {
+    width: 100vw;
+    height: 13vh;
+  }
+}
